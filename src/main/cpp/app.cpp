@@ -4,6 +4,7 @@
 #include <regex>
 #include <unordered_set>
 #include <fstream>
+#include <algorithm>
 
 #include "app.h"
 
@@ -164,6 +165,27 @@ std::string AdventOfCode2016::Answers::_02_02() {
     }
 
     return code;
+
+}
+
+int AdventOfCode2016::Answers::_03_01() {
+
+    std::ifstream in("C:/Users/arihu/workspace/AdventOfCode2016/src/main/resources/03", std::ios::in);
+
+    int validCount = 0;
+
+    if (in.is_open()) {
+        while (!in.eof()) {
+            std::vector<int> sides(3);
+            in >> std::ws >> sides[0] >> std::ws;
+            in >> std::ws >> sides[1] >> std::ws;
+            in >> std::ws >> sides[2] >> std::ws;
+            std::sort(sides.begin(), sides.end());
+            if (sides[2] < (sides[0] + sides[1])) validCount++;
+        }
+    }
+
+    return validCount;
 
 }
 
