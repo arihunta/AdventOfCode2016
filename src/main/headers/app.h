@@ -17,6 +17,8 @@ namespace AdventOfCode2016 {
             int _03_02();
             int _04_01();
             int _04_02();
+            std::string _05_01();
+            std::string _05_02();
 
     };
 
