@@ -23,6 +23,8 @@ namespace AdventOfCode2016 {
             std::string _06_02();
             int _07_01();
             int _07_02();
+            int _08_01();
+            std::string _08_02();
 
     };
 
