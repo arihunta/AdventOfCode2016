@@ -22,6 +22,8 @@ int main() {
     std::cout << "07-02: " << greeter._07_02() << std::endl;
     std::cout << "08-01: " << greeter._08_01() << std::endl;
     std::cout << "08-02: " << greeter._08_02() << std::endl;
+    std::cout << "09-01: " << greeter._09_01() << std::endl;
+    std::cout << "09-02: " << greeter._09_02() << std::endl;
 
     return 0;
 
