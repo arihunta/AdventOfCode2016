@@ -27,6 +27,8 @@ namespace AdventOfCode2016 {
             std::string _08_02();
             int _09_01();
             unsigned long long _09_02();
+            int _10_01();
+            int _10_02();
 
     };
 
